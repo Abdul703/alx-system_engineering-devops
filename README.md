@@ -1,0 +1,1 @@
+Exercises for Bash commands from ALX Software Engineering course.

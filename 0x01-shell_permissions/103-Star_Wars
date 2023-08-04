@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod a+x */
+cat < /dev/tcp/towel.blinkenlights.nl/23

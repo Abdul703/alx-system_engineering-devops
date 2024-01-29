@@ -2,14 +2,13 @@
 # print 'Best School' 10 times
 
 i=0
-while [ $i -lt 10 ]
+while [ $i -le 10 ]
 do
-    ((i++))
-
     if [ $i -eq 9 ]
     then
         echo 'Hi'
     else
         echo 'Best School'
     fi
+    ((i++))
 done

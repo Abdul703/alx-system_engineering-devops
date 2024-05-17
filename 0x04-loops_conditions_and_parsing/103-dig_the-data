@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Count the number of each IP along with status code from Apache log
+
+awk '{count[$1, $9]++} END {for (key in count) {split(key, arr, SUBSEP); print arr[1], arr[2], count[key]}}' ./apache-access.log

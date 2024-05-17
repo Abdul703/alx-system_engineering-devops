@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# show the content of etc/passwd showing only user, userid and home path
+
+while IFS=":" read -r username _ uid _ _ home _; do
+    echo "$username:$uid:$home"
+done < /etc/passwd

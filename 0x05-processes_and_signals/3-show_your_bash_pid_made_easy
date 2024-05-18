@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # print all process that contain 'bash'
-# shellcheck disable=SC2009
 
-ps -auxf | awk '/bash/'
+pgrep -l bash

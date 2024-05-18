@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# terminate a process that print 'To infinity and beyond'
+
+pkill -f to_infinity

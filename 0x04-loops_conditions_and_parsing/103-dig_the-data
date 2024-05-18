@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Count the number of each IP along with status code from Apache log and sort by occurrence
 
-awk '{print $1, $9}' ./apache-access.log | sort | uniq -c | sort -k1,1nr | awk '{print $3, $1, $2}'
+awk '{print $1, $9}' ./apache-access.log | sort | uniq -c | sort -k1,1nr | awk '{print $1, $2, $3}'
